@@ -35,6 +35,12 @@ function getAllProductsAndPlans() {
   });
 }
 
+stripe.products.retrieve(
+  'prod_FmWLKTNsBWgmfd',
+  function(err, product) {
+    // asynchronously called
+  }
+);
 
 function createProduct(requestBody) {
   return stripe.products.create({
